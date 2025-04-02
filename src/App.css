@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+/* Global Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Theme Variables */
+:root {
+  --primary-color: #114232;
+  --secondary-color: #f7f7f3;
+  --accent-color: #e0a800;
+  --text-color: #333;
+  --light-text: #fff;
+  --border-color: #e1e1e1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Body Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--secondary-color);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Container Utility */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-primary:hover {
+  background-color: #0d3022;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/* Prevent scrolling when chatbot is open */
+body.chatbot-open {
+  overflow: hidden;
+}
+
+/* Ensure only background is blurred, not chatbot */
+.app-container.chatbot-open {
+  filter: blur(5px); /* Apply blur to background */
+}
+
+.chatbot-container {
+  filter: none !important; /* Ensure chatbot is NOT blurred */
+}
+
+
+/* Responsive Utilities */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
   }
 }

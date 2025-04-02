@@ -1,0 +1,76 @@
+.testimonials {
+  padding: 80px 20px;
+  text-align: center;
+  background: var(--secondary-color);
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 40px;
+}
+
+.testimonial-container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.testimonial {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.6s ease-in-out;
+}
+
+.testimonial-text {
+  font-size: 18px;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.testimonial-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-top: 10px;
+}
+
+.testimonial-role {
+  font-size: 16px;
+  color: gray;
+}
+
+.quote-icon {
+  font-size: 30px;
+  color: var(--primary-color);
+  margin: 10px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/* Fade In Animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
