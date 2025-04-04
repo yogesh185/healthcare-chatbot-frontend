@@ -20,17 +20,17 @@ function TeamSection() {
     },
     { 
       name: 'Annanya', 
-      title: 'Frontend Developer',
+      title: 'ML Research',
       image: Annanya
     },
     { 
       name: 'Vaibhav', 
-      title: 'Neurologist',
+      title: 'Chatbot Developer',
       image: Vaibhav
     },
     { 
       name: 'Ayan', 
-      title: 'Dermatologist',
+      title: 'Chatbot Developer',
       image: Ayan
     }
   ];
