@@ -35,7 +35,7 @@ const Chatbot = ({ onClose }) => {
     setIsTyping(true);
 
     try {
-      const API_BASE_URL = "https://healthcare-chatbot-backend.up.railway.app/"; // Replace with actual Railway backend URL
+      const API_BASE_URL = "https://healthcare-chatbot-backend.up.railway.app"; // Replace with actual Railway backend URL
 
       const response = await axios.post(`${API_BASE_URL}/chat`, {
         message: input,
